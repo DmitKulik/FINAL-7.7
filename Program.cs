@@ -77,7 +77,7 @@ namespace FINAL_7._7{
                 Age = _Age;
             }
         }
-        class Deliveryman : AllPersons{
+        class Deliveryman : AllPersons{ // копозиция
             private HomeDelivery _homeDelivery;
 
             private PickPointDelivery _pickPointDelivery;
