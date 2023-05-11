@@ -1,6 +1,11 @@
-﻿namespace FINAL_7._7{
+﻿using System.Numerics;
+
+namespace FINAL_7._7{
     internal class Program{
-        static void Main(){
+        static void Main(string phone)
+        {
+            CheckPhone checkPhone = new CheckPhone();
+            checkPhone.CheckP(phone, out int correctPhone);
             /* ... */
         }
 
@@ -45,6 +50,9 @@
                 Console.WriteLine(Delivery.Address);
             }
         }
+
+
+
 
         class Customer : AllPersons{
             private int Age;
